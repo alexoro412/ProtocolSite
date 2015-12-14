@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Protocol</title>
+	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootflat.css">
+	<link rel="stylesheet" type="text/css" href="css/protocol.css">
+	<link rel="icon" type="image/png" href="img/or.png">
+</head>
+
+<body class="quark">
+<div class="board-spacer"></div>
+<br/>
+		<table class="nav-table">
+			<tr>
+				<td class="module-container">
+					<div class="side-module-x side-module-x-left">
+						<!-- <div class="side-module-x-inside"></div> -->
+						<div class="side-module-x-cover x-button">
+							<br/>
+							<!-- <img src="img/button.png"/> -->
+							<span class="side-module-title">Shop</span>
+						</div>
+						<div class="side-module-x-inside">
+							<br/>
+							<span>Here's some info on the buying</span>
+						</div>
+					</div>
+				</td>
+				<td class="side-wires">
+
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+
+				</td>
+				<td rowspan="2" colspan="2" class="board-container">
+					<img src="img/base2.png" id="base"/>
+				</td>
+				<td class="side-wires">
+
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+
+				</td>
+				<td class="module-container">
+					<div class="side-module-x side-module-x-right">
+						<!-- <div class="side-module-x-inside"></div> -->
+						<div class="side-module-x-cover x-pot">
+							<br/>
+							<!-- <img src="img/button.png"/> -->
+							<span class="side-module-title">Arduino</span>
+						</div>
+						<div class="side-module-x-inside">
+							<br/>
+							<span>Here's some info on the Arduino platform</span>
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="module-container">
+					<div class="side-module-x side-module-x-left">
+						<!-- <div class="side-module-x-inside"></div> -->
+						<div class="side-module-x-cover x-led">
+							<br/>
+							<!-- <img src="img/button.png"/> -->
+							<span class="side-module-title">Arduino</span>
+						</div>
+						<div class="side-module-x-inside">
+							<br/>
+							<span>Here's some info on the Arduino platform</span>
+						</div>
+					</div>
+				</td>
+				<td class="side-wires">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+				</td>
+				<td class="side-wires">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+				</td>
+				<td class="module-container">
+					<div class="side-module-x side-module-x-right">
+						<!-- <div class="side-module-x-inside"></div> -->
+						<div class="side-module-x-cover x-flex">
+							<br/>
+							<!-- <img src="img/button.png"/> -->
+							<span class="side-module-title">Arduino</span>
+						</div>
+						<div class="side-module-x-inside">
+							<br/>
+							<span>Here's some info on the Arduino platform</span>
+						</div>
+					</div>
+					<style>
+					.side-module-x-inside{
+						height:100%;
+						/*min-height:90px;*/
+						width:50%;
+						position:absolute;
+						top:0;
+						left:0;
+						box-shadow: 0px 0px 15px -1px #000;
+						/*border:1px dashed green;*/
+						background-color:#752927;
+						/*text-overflow: clip;*/
+						/*text-overflow: ellipsis;*/
+						text-align: center;
+					}
+						.side-module-x{
+							height:50%;
+							min-height: 100px;
+							width:100%;
+							max-height:100px;
+							/*background-color:#000;*/
+							/*border: 1px solid blue;*/
+							position:relative;
+						}
+						.side-module-x-cover{
+							position:relative;
+							width:50%;
+							height:100%;
+							min-height:100px;
+							/*border: 1px solid purple;*/
+							background-color: #a52b27;
+							z-index:4;
+							margin-left:0px;
+							margin-right:0px;
+							display: flex;
+							transition: all 0.4s ease-out;
+							/*float:right;*/
+							/*background-image: url('img/button3.png');*/
+							background-size: contain;
+							box-shadow: 0px 0px 15px -1px #000;
+							/*background: #000000 url('img/button.png') no-repeat fixed center;*/
+						}
+						.x-button{
+							background-image: url('img/button3.png');
+							background-repeat: no-repeat;
+						}
+						.x-flex{
+							background-image: url('img/flex.png');
+							background-repeat: no-repeat;
+						}
+						.x-led{
+							background-image: url('img/LED.png');
+							background-repeat: no-repeat;
+						}
+						.x-pot{
+							background-image: url('img/potentiometer.png');
+							background-repeat: no-repeat;
+						}
+						.side-module-x-right:hover > .side-module-x-cover{
+							margin-left:50%;
+							transition: all 0.2s ease-in;
+						}
+						.side-module-x-left:hover > .side-module-x-cover{
+							margin-right:50%;
+							transition: all 0.2s ease-in;
+						}
+						.side-module-x-left *{
+							float:right;
+						}
+						.side-module-x-left > .side-module-x-inside{
+							margin-left:50%;
+						}
+						/*.side-module-x-right:hover .side-module-x-inside{
+							width:50%;
+						}
+						.side-module-x-inside{
+							width:0%;
+							height:100%;
+							min-height:50px;
+							border: 1px solid green;
+							margin-right:0px;
+							clear: none;
+							display:flex;
+							float:left;
+						}*/
+					</style>
+					<!-- <div class="side-module side-module-right">
+						<div class="side-module-cover">
+							<div class="side-module-inside">H</div>
+						</div>
+						<span class="side-module-title">Arduino</span>
+						<br/>
+
+						<div class="side-module-cover"></div>
+						<span class="side-module-text">Here's some info about the Arduino platform</span>
+					</div> -->
+				</td>
+			</tr>
+			<!-- <tr>
+				<td></td>
+				<td></td>
+				<td class="bottom-wires">
+					<div class="wire-vertical"></div>
+					<div class="wire-vertical"></div>
+					<div class="wire-vertical"></div>
+					<div class="wire-vertical"></div>
+				</td>
+				<td class="bottom-wires">
+					<div class="wire-vertical"></div>
+					<div class="wire-vertical"></div>
+					<div class="wire-vertical"></div>
+					<div class="wire-vertical"></div>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="bottom-board">
+				<td></td>
+				<td></td>
+				<td class="bottom-module">3</td>
+				<td class="bottom-module">4</td>
+				<td></td>
+				<td></td>
+			</tr> -->
+		</table>
+<div class="board-spacer"></div>
+
+<nav class="navbar navbar-default" style="border:0px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header quark">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Protocol</a>
+    </div>
+    <div class="collapse navbar-collapse quark " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Middle School</a></li>
+				<li><a href="#">High School</a></li>
+				<li><a href="#">Beyond</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- BEGIN PAGE CONTENT -->
+<!-- <div class="col-md-12">
+<div class="col-md-8">
+	<h2>About Protocol</h2>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="col-md-4 content-side-image">
+
+</div>
+</div> -->
+<div>
+<table class="content-table">
+<tbody>
+		<tr>
+			<td>
+				<h3>About Protocol Electronics</h3>
+			</td>
+			<td class="content-side-image" rowspan="2">
+				<div class="content-side-image-text">
+					<div data-embed_type="product" data-shop="embeds.myshopify.com" data-product_name="YELLO W"data-product_handle="yello-w" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-button_background_color="30373b"data-button_text_color="ffffff" data-background_color="edede5"></div> <script type="text/javascript"> document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript"src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>'); </script> <noscript><a href="https://embeds.myshopify.com/cart/8829753283:1" target="_blank">Buy YELLO W</a></noscript>
+
+				</div>
+			</td>
+		</tr>
+	<tr>
+		<td class="content-text">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</td>
+
+	</tr>
+	</tbody>
+</table>
+</div>
+<!-- END PAGE CONTENT -->
+
+<script src="js/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script href="dist/js/npm.js"></script>
+<script href="js/icheck.min.js"></script>
+<script href="js/jquery.fs.selecter.min.js"></script>
+<script href="js/jquery.fs.stepper.min.js"></script>
+</body>
+<style>
+.nav-table *{
+	color:#ffffff;
+}
+.nav-table tr td{
+	/*border:1px solid black;*/
+}
+#base{
+	/*width:100%;*/
+	/*min-width:100% !important;*/
+	max-width: 100%;
+	/*width:397px;
+	height:397px;*/
+}
+.nav-table{
+	margin-left: 15%;
+	margin-right:15%;
+	margin-bottom:5%;
+	max-width:70%;
+}
+.module-container{
+	width:22%;
+}
+.side-module{
+	width:50%;
+	height:100px;
+	background-color:#f0544f;
+	text-align: center;
+	color:#ffffff;
+	/*margin-top:00px;*/
+	box-shadow: 0px 0px 15px -1px #000;
+	z-index:2;
+}
+.side-module-left{
+	margin-left:50%;
+	float:right;
+	transition: margin-left 0.5s ease, width 0.5s ease;
+}
+.side-module-right{
+	margin-right:50%;
+	transition: margin-right 0.5s ease, width 0.5s ease;
+	/*animation-delay: 3s;*/
+	/*animation-name:side-module-right-anim;*/
+	/*animation-duration:0.2s;*/
+	/*animation-direction: reverse;*/
+	/*animation-fill-mode: forwards;*/
+}
+.side-module:hover {
+	/*animation-name: module-anim;
+	animation-duration: 1s;*/
+}
+.side-module:hover > span{
+	visibility:visible;
+}
+.side-module-right:hover{
+	width:100%;
+	margin-right:0%;
+	transition: all 0.15s ease;
+	/*animation-name:side-module-right-anim;
+	animation-duration:0.2s;
+	animation-fill-mode: forwards;*/
+}
+.side-module-left:hover{
+width:100%;
+margin-left:0%;
+transition: all 0.2s ease;
+	/*animation-name:side-module-left-anim;
+	animation-duration:0.2s;
+	animation-fill-mode: forwards;*/
+}
+.side-wires{
+	width:3%;
+}
+.side-wires > span{
+	background-color:#F7B724;
+	padding-right:-20px;
+	margin-right:-20px;
+}
+.side-wires > div{
+	background-color:#F7B724;
+	width:100%;
+	/*min-width:40px;*/
+	height:10px;
+	margin-bottom:7px;
+	box-shadow: 0px 0px 15px -1px #000;
+	z-index:2;
+}
+.side-module-text{
+	visibility: hidden;
+}
+.side-module-title{
+	/*text-decoration: underline;*/
+	/*background-color: #660066;*/
+	font-size: 1.3em;
+}
+.bottom-board *{
+	/*color:#000;*/
+}
+.bottom-module{
+	width:100px;
+	height:100px;
+	background-color:purple;
+	text-align: center;
+	color:#ffffff;
+}
+.board-container{
+	width:50%;
+	box-shadow: 0px 0px 15px -1px #000;
+	z-index:2;
+}
+.bottom-wires{
+	text-align:center;
+}
+.bottom-wires > span{
+	background-color:#000;
+}
+.wire-vertical{
+	background-color:#000;
+	height:100%;
+	max-height:100%;
+	width:10px;
+	display: inline-block;
+}
+.content-side-image{
+	background-image: url('img/board.jpg');
+	width:40%;
+	vertical-align: top;
+}
+.content-text{
+	width:60%;
+}
+.content-table{
+	width:100%;
+}
+.content-table  tr  td{
+	border: 1px solid black;
+	background-color: #fff;
+}
+.content-side-image-text{
+		/*width:70%;*/
+		float:right;
+		background-color:#fff;
+}
+@keyframes side-module-left-anim{
+	from {width:50%;margin-left:50%;}
+	to {width:100%;margin-left:0%;}
+}
+@keyframes side-module-right-anim{
+	from {width:50%;margin-right:50%;}
+	to {width:100%;margin-right:0%;}
+}
+body {
+    background-color: #D2DEE6;
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.side-module-inside{
+	background-color:#000000;
+	width:100%;
+	/*float:right;*/
+	/*margin-left:-50%;*/
+	margin-right:0px;
+	width:50px;
+	visibility:hidden;
+	z-index:1;
+}
+.side-module-right:hover > .side-module-inside {
+	margin-left:0px;
+	visibility: visible;
+	z-index:3;
+	background-color:#fff;
+	transition: all 1s ease;
+}
+.side-module-cover{
+	width:100%;
+	/*min-width:100%;*/
+	height:100%;
+	background-color:#d2dee6;
+	transition: all 0.5s ease;
+	/*z-index:4;*/
+}
+.side-module-right:hover > .side-module-cover{
+	/*width:50%;*/
+	margin-left:50%;
+	width:50%;
+	transition: all 0.2s ease;
+	/*float:right;*/
+}
+/*body{
+	background-color: #d2ee6;
+}*/
+</style>
+</html>
