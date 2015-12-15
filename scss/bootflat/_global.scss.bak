@@ -10,8 +10,8 @@ $prefix-moz:                  true !global;
 $prefix-spec:                 true !global;
 
 // color elements
-$white:                       #FFFFFF !default;
-$black:                       #D2DEE6 !default;
+$white:                       #FFF !default;
+$black:                       #000 !default;
 
 $bluejeans-dark:              #4A89DC !default;
 $bluejeans-light:             #5D9CEC !default;
@@ -21,14 +21,6 @@ $aqua-light:                  #4FC1E9 !default;
 
 $mint-dark:                   #37BC9B !default;
 $mint-light:                  #48CFAD !default;
-
-//$mint-dark: #752927; 
-//$mint-light: #a52b27;
-
-$red-dark: #752927;
-$red-light: #A52B27;
-
-//$primary-color: #752927;
 
 $grass-dark:                  #8CC152 !default;
 $grass-light:                 #A0D468 !default;
@@ -56,16 +48,6 @@ $mediumgray-light:            #CCD1D9 !default;
 
 $darkgray-dark:               #434A54 !default;
 $darkgray-light:              #656D78 !default;
-
-$pink-sam: #f0544f !default;
-
-$navbar-background-color:                    $red-dark;
-$navbar-background-color-active:             $red-light;
-
-$navbar-font-color:                          $pink-sam;
-$navbar-item-background-color-hover:         $navbar-background-color-active !default;
-
-$navbar-inverse-background-color:            $black !default;
 
 
 // Global Mixins

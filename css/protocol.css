@@ -4,49 +4,8 @@
 .panel-tall{
 	margin-bottom: 0px;
 }
-/*.blue{
-	background-color: #2CC0DA;
-	color:#2A2C2E;
-}
-.blue *{
-	color:#2A2C2E !important;
-}
-.blue > div > div > ul > li:hover{
-	background-color:#2CDA9D !important;
-}
-.orange > div > div > ul > li:hover{
-	background-color:#D2DEE6 !important;
-}
-.blue > div > div > ul > li > a:hover{
-	color:#fff !important;
-}
-.orange > div > div > ul > li > a:hover{
-	color:#fff !important;
-}
-.blue .active--{
-	background-color:#2CDA9D;
-}
-.orange .active--{
-	background-color:#D2DEE6;
-}
-.orange{
-	background-color:#F7B724 !important;
-}
-.red{
-	background-color: #F0544F !important;
-	color:#fff !important;
-}
-.red *{
-	color:#fff !important;
-}
-.green{
-	background-color:#2CDA9D;
-}
-.grey{
-	background-color:#D2DEE6;
-}*/
 @font-face {
-  font-family: "Quarca";
+  font-family:"Quarca";
   src: url(../fonts/QuarcaNormRegular.otf) format("truetype");
 }
 .quark{
@@ -55,7 +14,7 @@
 .panel-full{
 	padding-left:0px !important;
 	padding-right:0px !important;
-}
+/*}
 .btn-primary{
 	background-color:#ffffff;
 	border-color:#F0544F;
@@ -65,17 +24,17 @@
 	background-color:#F0544F;
 	border-color:#F0544F;
 	color:#fff !important;
-}
-.over-image{
+}*/
+/*.over-image{
 	box-shadow: 0px 0px 15px #888888 !important;
-}
-#image{
+}*/
+/*#image{
 	background-image:url("../img/redboard2.png");
 	background-repeat:no-repeat;
 	float:left;
 	clear:none;
 	width:100%;
-}
+}*/
 /*.navbar-toggle{
 	background-color:#F0544F !important;
 	border-color:#F0544F !important;

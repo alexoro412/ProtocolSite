@@ -4,20 +4,22 @@
 <head>
 	<title>Protocol</title>
 	<link rel="stylesheet" href="dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootflat.css">
+	<link rel="stylesheet" href="scss/bootflat.css">
 	<link rel="stylesheet" type="text/css" href="css/protocol.css">
 	<link rel="icon" type="image/png" href="img/or.png">
 </head>
 
 <body class="quark">
 <div class="board-spacer"></div>
-<br/>
+
+	<div class="nav-table-holder">
+		<br/>
 		<table class="nav-table">
 			<tr>
 				<td class="module-container">
 					<div class="side-module-x side-module-x-left">
 						<!-- <div class="side-module-x-inside"></div> -->
-						<div class="side-module-x-cover x-button">
+						<div class="side-module-x-cover x-button-left">
 							<br/>
 							<!-- <img src="img/button.png"/> -->
 							<span class="side-module-title">Shop</span>
@@ -53,11 +55,11 @@
 						<div class="side-module-x-cover x-pot">
 							<br/>
 							<!-- <img src="img/button.png"/> -->
-							<span class="side-module-title">Arduino</span>
+							<span class="side-module-title">Schools</span>
 						</div>
 						<div class="side-module-x-inside">
 							<br/>
-							<span>Here's some info on the Arduino platform</span>
+							<span>Protocol for middle and high school</span>
 						</div>
 					</div>
 				</td>
@@ -67,14 +69,14 @@
 				<td class="module-container">
 					<div class="side-module-x side-module-x-left">
 						<!-- <div class="side-module-x-inside"></div> -->
-						<div class="side-module-x-cover x-led">
+						<div class="side-module-x-cover x-led-left">
 							<br/>
 							<!-- <img src="img/button.png"/> -->
-							<span class="side-module-title">Arduino</span>
+							<span class="side-module-title">Resources</span>
 						</div>
 						<div class="side-module-x-inside">
 							<br/>
-							<span>Here's some info on the Arduino platform</span>
+							<span>Downloads & Tutorials</span>
 						</div>
 					</div>
 				</td>
@@ -146,19 +148,35 @@
 							/*background: #000000 url('img/button.png') no-repeat fixed center;*/
 						}
 						.x-button{
-							background-image: url('img/button3.png');
+							background-image: url('img/button.png');
+							background-repeat: no-repeat;
+						}
+						.x-button-left{
+							background-image: url('img/button-180.png');
 							background-repeat: no-repeat;
 						}
 						.x-flex{
 							background-image: url('img/flex.png');
 							background-repeat: no-repeat;
 						}
+						.x-flex-left{
+							background-image: url('img/flex-180.png');
+							background-repeat: no-repeat;
+						}
 						.x-led{
 							background-image: url('img/led.png');
 							background-repeat: no-repeat;
 						}
+						.x-led-left{
+							background-image: url('img/led-180.png');
+							background-repeat: no-repeat;
+						}
 						.x-pot{
 							background-image: url('img/potentiometer.png');
+							background-repeat: no-repeat;
+						}
+						.x-pot-left{
+							background-image: url('img/potentiometer-180.png');
 							background-repeat: no-repeat;
 						}
 						.side-module-x-right:hover > .side-module-x-cover{
@@ -174,6 +192,9 @@
 						}
 						.side-module-x-left > .side-module-x-inside{
 							margin-left:50%;
+						}
+						.nav-table-holder{
+							/*background-image: url('img/pcb.png');*/
 						}
 						/*.side-module-x-right:hover .side-module-x-inside{
 							width:50%;
@@ -228,6 +249,8 @@
 				<td></td>
 			</tr> -->
 		</table>
+		<br/>
+	</div>
 <div class="board-spacer"></div>
 
 <nav class="navbar navbar-default" style="border:0px;">
@@ -245,36 +268,42 @@
     <div class="collapse navbar-collapse quark " id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Middle School</a></li>
-				<li><a href="#">High School</a></li>
-				<li><a href="#">Beyond</a></li>
+				<li><a href="#">Education</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">Arduino</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Login</a></li>
-      </ul>
+      </ul> -->
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <!-- BEGIN PAGE CONTENT -->
-<!-- <div class="col-md-12">
-<div class="col-md-8">
+<div class="bs-component">
+<div class="col-sm-6 col-sm-offset-2">
 	<h2>About Protocol</h2>
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p> Protocol electronics is a company made to educate people about the world of electronics. Our product, the protocol development platform, is an education tool to help people learn about how to code, make simple circuits, and make ideas come to life. Conventional prototyping is a long and painful process but Protocol Electronics makes it easier with its line of prototyping tools. Take a look at our products and get making! </p>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div class="col-md-4 content-side-image">
+<div class="col-sm-3">
+	<!-- <div class="content-side-image-text"> -->
+	<br/>
+	<br/>
+		<div data-embed_type="product" data-shop="embeds.myshopify.com" data-product_name="YELLO W"data-product_handle="yello-w" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-button_background_color="30373b"data-button_text_color="ffffff" data-background_color="edede5"></div> <script type="text/javascript"> document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript"src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>'); </script> <noscript><a href="https://embeds.myshopify.com/cart/8829753283:1" target="_blank">Buy YELLO W</a></noscript>
 
+	<!-- </div> -->
 </div>
-</div> -->
+</div>
 <div>
-<table class="content-table">
+<!-- <table class="content-table">
 <tbody>
 		<tr>
 			<td>
-				<h3>About Protocol Electronics</h3>
+				<h3 class="content-title">About Protocol Electronics</h3>
 			</td>
 			<td class="content-side-image" rowspan="2">
 				<div class="content-side-image-text">
@@ -285,6 +314,18 @@
 		</tr>
 	<tr>
 		<td class="content-text">
+			<p class="content-para">
+				Protocol electronics is a company made to educate people about the world of electronics. Our product, the protocol development platform, is an education tool to help people learn about how to code, make simple circuits, and make ideas come to life. Conventional prototyping is a long and painful process but Protocol Electronics makes it easier with its line of prototyping tools. Take a look at our products and get making!
+			</p>
+			<style>
+				.content-title{
+					margin-left:10%;
+				}
+				.content-para{
+					margin-left: 10%;
+					margin-right:40%;
+				}
+			</style>
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -294,7 +335,7 @@
 
 	</tr>
 	</tbody>
-</table>
+</table> -->
 </div>
 <!-- END PAGE CONTENT -->
 
@@ -322,7 +363,9 @@
 .nav-table{
 	margin-left: 15%;
 	margin-right:15%;
-	margin-bottom:5%;
+	margin-bottom:0%;
+	padding-bottom:5%;
+	/*margin-top:5%;*/
 	max-width:70%;
 }
 .module-container{
@@ -399,6 +442,8 @@ transition: all 0.2s ease;
 	/*text-decoration: underline;*/
 	/*background-color: #660066;*/
 	font-size: 1.3em;
+	margin-left:5%;
+	margin-top:5%;
 }
 .bottom-board *{
 	/*color:#000;*/
