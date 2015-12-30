@@ -10,12 +10,15 @@
 </head>
 
 <body class="quark">
-<div class="board-spacer"></div>
-<h4 style="text-align:center;">Background image needed</h4>
+
+<!-- <div class="board-spacer"></div> -->
+<!-- <h4 style="text-align:center;">Background image needed</h4> -->
 	<div class="nav-table-holder">
-		<br/>
+		<!-- <br/> -->
 		<table class="nav-table">
+			<br class=".x-collapse"/>
 			<tr>
+				<!-- <td rowspan="2" class="nav-margin"></td> -->
 				<td class="module-container">
 					<div class="side-module-x side-module-x-left">
 						<!-- <div class="side-module-x-inside"></div> -->
@@ -26,7 +29,7 @@
 						</div>
 						<div class="side-module-x-inside">
 							<br/>
-							<span>Here's some info on the buying</span>
+							<span>Protocol dev. board and accessories</span>
 						</div>
 					</div>
 				</td>
@@ -63,6 +66,8 @@
 						</div>
 					</div>
 				</td>
+				<!-- <td rowspan="2" class="nav-margin">
+				</td> -->
 			</tr>
 
 			<tr>
@@ -102,10 +107,10 @@
 						</div>
 						<div class="side-module-x-inside">
 							<br/>
-							<span>Here's some info on the Arduino platform</span>
+							<span>Info on the Arduino platform</span>
 						</div>
 					</div>
-					<style>
+					<!-- /*<style>
 					.side-module-x-inside{
 						height:100%;
 						/*min-height:90px;*/
@@ -141,6 +146,7 @@
 							margin-right:0px;
 							display: flex;
 							transition: all 0.4s ease-out;
+							transition-delay: 0.1s;
 							/*float:right;*/
 							/*background-image: url('img/button3.png');*/
 							background-size: contain;
@@ -185,6 +191,11 @@
 						}
 						.side-module-x-left:hover > .side-module-x-cover{
 							margin-right:50%;
+							/*animation-name: side-module-left-anim;
+							animation-duration: 0.4s;
+							animation-direction: normal;
+							animation-fill-mode: forwards;
+							animation-timing-function: ease;*/
 							transition: all 0.2s ease-in;
 						}
 						.side-module-x-left *{
@@ -209,7 +220,7 @@
 							display:flex;
 							float:left;
 						}*/
-					</style>
+					</style>*/ -->
 					<!-- <div class="side-module side-module-right">
 						<div class="side-module-cover">
 							<div class="side-module-inside">H</div>
@@ -249,9 +260,9 @@
 				<td></td>
 			</tr> -->
 		</table>
-		<br/>
+		<br class="x-collapse"/>
 	</div>
-<div class="board-spacer"></div>
+<!-- <div class="board-spacer"></div> -->
 
 <nav class="navbar navbar-default" style="border:0px;">
   <div class="container-fluid">
@@ -281,41 +292,48 @@
 </nav>
 <!-- BEGIN PAGE CONTENT -->
 <div class="bs-component">
-	<div class="col-sm-2">
+	<br class="x-collapse"/>
+	<!-- <div class="col-sm-2"> -->
 
-		<h4> List </h4?
+		<!-- <h4> List </h4>
 		<ul>
 			<li>Add a List here?</li>
 			<li>Or another link to buy?</li>
 			<li>Or an image</li>
 			<li>Or lessen this width and put in social media widgets</li>
 			<li>Email me sam</li>
-		</ul>
-	</div>
-<div class="col-sm-6 content-text">
-	<h2>About Protocol</h2>
-	<p> Protocol electronics is a company made to educate people about
-		the world of electronics. Our product, the protocol development
-		platform, is an education tool to help people learn about how to
-		code, make simple circuits, and make ideas come to life.
-		Conventional prototyping is a long and painful process but Protocol
-		Electronics makes it easier with its line of prototyping tools.
-		Take a look at our products and get making!
-	</p>
-	<br/>
-	<h4>May need more content</h4>
-	<br/>
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</ul> -->
+	<!-- </div> -->
+<div class="col-sm-6 col-sm-offset-2">
+	<div class="content-text panel panel-default shadow-light">
+		<div class="panel-heading">
+			<h2>About Protocol</h2>
+		</div>
+		<div class="panel-body content-text">
+			<p> Protocol electronics is a company made to educate people about
+				the world of electronics. Our product, the protocol development
+				platform, is an education tool to help people learn about how to
+				code, make simple circuits, and make ideas come to life.
+				Conventional prototyping is a long and painful process but Protocol
+				Electronics makes it easier with its line of prototyping tools.
+				Take a look at our products and get making!
+			</p>
+			<br/>
+			<h4>May need more content</h4>
+			<br/>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
 	<!-- <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+</div>
 </div>
 <div class="col-sm-3">
 	<!-- <div class="content-side-image-text"> -->
 	<br/>
 	<br/>
-		<div data-embed_type="product" data-shop="embeds.myshopify.com" data-product_name="YELLO W"data-product_handle="yello-w" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-button_background_color="30373b"data-button_text_color="ffffff" data-background_color="edede5"></div> <script type="text/javascript"> document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript"src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>'); </script> <noscript><a href="https://embeds.myshopify.com/cart/8829753283:1" target="_blank">Buy YELLO W</a></noscript>
-		<h4>I need the actual shopify embeds</h4>
+		<div class="shadow-light" data-embed_type="product" data-shop="embeds.myshopify.com" data-product_name="YELLO W"data-product_handle="yello-w" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-button_background_color="30373b"data-button_text_color="ffffff" data-background_color="edede5"></div> <script type="text/javascript"> document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript"src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>'); </script> <noscript><a href="https://embeds.myshopify.com/cart/8829753283:1" target="_blank">Buy YELLO W</a></noscript>
+		<!-- <h4>I need the actual shopify embeds</h4> -->
 	<!-- </div> -->
 </div>
 </div>
@@ -358,6 +376,11 @@
 	</tbody>
 </table> -->
 </div>
+<div class="about-us col-sm-12">
+<div class="col-sm-6 col-sm-offset-3 about-us">
+	<h4> Copyright 2016 Protocol Incorporated</h4>
+</div>
+</div>
 <!-- END PAGE CONTENT -->
 
 <script src="js/jquery.min.js"></script>
@@ -367,7 +390,27 @@
 <script href="js/jquery.fs.selecter.min.js"></script>
 <script href="js/jquery.fs.stepper.min.js"></script>
 </body>
-<style>
+<!-- /*<style>
+
+/*div.stretchy-wrapper {
+  position: relative;
+	width: 100%;
+	padding-bottom: 75%;
+	background:gold;
+}*/
+div.stretchy-wrapper{
+    width:24%;
+    height:24vw;
+    margin:0.5%;
+    background:gold;
+    float:left;
+}
+
+div.stretchy-wrapper > div {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
 .nav-table *{
 	color:#ffffff;
 }
@@ -380,6 +423,9 @@
 	max-width: 100%;
 	/*width:397px;
 	height:397px;*/
+}
+.nav-margin{
+	width:15%;
 }
 .nav-table{
 	margin-left: 15%;
@@ -518,8 +564,8 @@ transition: all 0.2s ease;
 		background-color:#fff;
 }
 @keyframes side-module-left-anim{
-	from {width:50%;margin-left:50%;}
-	to {width:100%;margin-left:0%;}
+	from {margin-right:50%;}
+	to {margin-right:0%;}
 }
 @keyframes side-module-right-anim{
 	from {width:50%;margin-right:50%;}
@@ -563,8 +609,35 @@ body {
 	transition: all 0.2s ease;
 	/*float:right;*/
 }
+@media (max-width: 920px){
+	.nav-table *{
+		/*visibility: hidden;*/
+	}
+	.nav-table-holder{
+		/*visibility: hidden;*/
+		display: none;
+		margin:0px;
+		border:0px;
+		padding:0px;
+	}
+	.x-collapse{
+		display:none;
+		margin:0px;
+		border:0px;
+		padding:0px;
+	}
+}
+
+.x-collapse{}
+
+.shadow{
+	box-shadow: 0px 0px 15px -1px #000;
+}
+.shadow-light{
+	box-shadow: 0px 0px 10px -1px #000;
+}
 /*body{
 	background-color: #d2ee6;
 }*/
-</style>
+</style>*/ -->
 </html>
