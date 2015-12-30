@@ -11,6 +11,68 @@
 
 <body class="quark">
 
+	<script>
+
+	</script>
+
+<div id="veil-container">
+	<div id="veil">
+	</div>
+</div>
+<div id="popup">
+	<table class="popup-table">
+		<tbody>
+			<tr onclick="closePopup()" class="popup-vert-spacer-top">
+				<td colspan="3" class="popup-vert-spacer "></td>
+			</tr>
+			<tr class="popup-row">
+				<td class="popup-spacer" onclick="closePopup()"></td>
+				<td class="popup-panel">
+					<!-- <div class="col-sm-12"> -->
+					<!-- <br/> -->
+						<div class="panel panel-primary popup-panel-panel">
+							<div class="panel-heading">
+								<span id="popup-title">TITLE</span><button type="button" class="close" onclick="javascript:closePopup();">&times;</button>
+							</div>
+							<div class="panel-body" >
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<p id="popup-text">conaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkjconaeouhateiyafhbkasgyidavehkfjhugyihbkj</p>
+											</td>
+											<td class="popup-text-spacer">
+
+											</td>
+											<td>
+												<div id="popup-image"></div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div id="popup-lower-images"></div>
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+								<!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
+							</div>
+						</div>
+					<!-- </div> -->
+				</td>
+				<td class="popup-spacer" onclick="closePopup()"></td>
+			</tr>
+			<tr onclick="closePopup()">
+				<td colspan="3" class="popup-vert-spacer"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<!-- <div id="popup-catch" onclick="closePopup()">
+
+</div> -->
+
 <!-- <div class="board-spacer"></div> -->
 <!-- <h4 style="text-align:center;">Background image needed</h4> -->
 	<div class="nav-table-holder">
@@ -144,35 +206,40 @@
 <div class="bs-component">
 	<br class="x-collapse"/>
 
-	<div class="col-md-5">
-		<!-- <td class="shop-spacer"></td> -->
-		<div class="shop-item">
-		<div style="z-index:40;" class="module-shop shadow">
-			<div class="module-title">
-				Switch Module
-			</div>
-			<div class="module-about">
-				The switch module writes either HIGH or LOW to the Arduino based on its position. This can be used to turn an LED on, activate a motor, or turn on a buzzer. Anything that can either be on or off can be controlled with this module.
-			</div>
-		</div>
-		<div class="side-wires" style="z-index:1;">
-			<br/>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<div>
-			<img class="shadow" src="img/potentiometer.png" style="height:100px;"/>
-		</div>
-	</div>
-		<!-- <table>
-			<tbody>
+	<div class="col-sm-7 col-sm-offset-3">
+		<table class="shop-table">
+			<tbody id="shoppe">
+				<!-- <tr>
+					<td class="shop-spacer" colspan="3"></td>
+				</tr>
 
 			<tr class="shop-item">
+				<td class="module-shop shadow">
+					<div class="module-title">
+						&nbsp;Switch Module
+					</div>
+					<div class="module-about">
+						The switch module writes either HIGH or LOW to the Arduino based on its position. This can be used to turn an LED on, activate a motor, or turn on a buzzer. Anything that can either be on or off can be controlled with this module.
+					</div>
+				</td>
+				<td class="side-wires" style="z-index:1;">
+					<br/>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</td>
+				<td>
+					<img class="shadow" src="img/potentiometer.png"/>
+				</td>
+			</tr>
 
-				<td class="shop-spacer"></td>
-				<td class="module-shop">
+			<tr>
+				<td class="shop-spacer" colspan="3"></td>
+			</tr>
+			<tr class="shop-item">
+
+				<td class="module-shop shadow">
 					<div class="module-title">
 						Switch Module
 					</div>
@@ -181,156 +248,30 @@
 					</div>
 				</td>
 				<td class="side-wires" style="z-index:1;">
+					<br/>
 					<div></div>
 					<div></div>
 					<div></div>
 					<div></div>
 				</td>
 				<td>
-					<img class="shadow" src="img/potentiometer.png" style="height:100px;"/>
+					<img class="shadow" src="img/potentiometer.png"/>
 				</td>
-
-			</tr>
+			</tr> -->
 
 		</tbody>
-		</table> -->
+		</table>
 	</div>
+	<!-- <div class="col-sm-3 col-sm-offset-1">
+		<table>
+			<tbody>
 
-
-			<!-- <div class="panel-body">
-				<ul class="list-group">
-					<li class="list-group-item">
-						<h4 class="shop-heading">Base Module</h4>
-						<p class="shop-desc">
-							The base module attaches to any Arduino in the UNO form factor and 5v logic. It is the translator between the Arduino input and output to the protocol modules.
-						</p>
-						<div class="side-wires">
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-					</li>
-			    <li class="list-group-item">
-						<h4 class="shop-heading">Switch Module</h4>
-						<p class="shop-desc">
-							The switch module writes either HIGH or LOW to the Arduino based on its position. This can be used to turn an LED on, activate a motor, or turn on a buzzer. Anything that can either be on or off can be controlled with this module.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Potentiometer Module</h4>
-						<p class="shop-desc">
-							The potentiometer module is an analog input that changes its output value based on its rotational position. This can be used to dim an led or change the tone generated by a piezo buzzer. Anything that requires a variable input to operate can be controlled with this module.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Servo Module</h4>
-						<p class="shop-desc">
-							The servo module controls a small servo on the end of a cable. A servo has about 180 degrees of possible motion, so it is perfect for robotic and precise applications. A servo is a very accurate motor, and it can be attached to any of the main board's digital outputs.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">LED Module</h4>
-						<p class="shop-desc">
-							The LED module allows for an LED attachment to the Protocol main board. Just plug this module in and use a digital write command to make you projects light up. This module comes with a green LED.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Force Module</h4>
-						<p class="shop-desc">
-							The Protocol force module outputs a variable signal based on the amount of force applied to the resistance pad attached to the module. There are many applications for a force module, and it will work with any module that requires an analog input.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Piezo Module</h4>
-						<p class="shop-desc">
-							The piezo module allows the Protocol system to generate sound. It accepts a PWM signal, which can be generated from any of the Main Board’s digital outputs. This can be used with the Arduino tone library to produce a multitude of different audible frequencies.
-						</p>
-					</li>
-			  </ul>
-			</div> -->
-		</div>
-	</div>
-	<!-- <div class="col-sm-5 panel-full">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				Protocol
-			</div>
-			<div class="panel-body">
-				<ul class="list-group">
-					<li class="list-group-item">
-						<h4 class="shop-heading">Base Module</h4>
-						<p class="shop-desc">
-							The base module attaches to any Arduino in the UNO form factor and 5v logic. It is the translator between the Arduino input and output to the protocol modules.
-						</p>
-					</li>
-			    <li class="list-group-item">
-						<h4 class="shop-heading">Switch Module</h4>
-						<p class="shop-desc">
-							The switch module writes either HIGH or LOW to the Arduino based on its position. This can be used to turn an LED on, activate a motor, or turn on a buzzer. Anything that can either be on or off can be controlled with this module.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Potentiometer Module</h4>
-						<p class="shop-desc">
-							The potentiometer module is an analog input that changes its output value based on its rotational position. This can be used to dim an led or change the tone generated by a piezo buzzer. Anything that requires a variable input to operate can be controlled with this module.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Servo Module</h4>
-						<p class="shop-desc">
-							The servo module controls a small servo on the end of a cable. A servo has about 180 degrees of possible motion, so it is perfect for robotic and precise applications. A servo is a very accurate motor, and it can be attached to any of the main board's digital outputs.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">LED Module</h4>
-						<p class="shop-desc">
-							The LED module allows for an LED attachment to the Protocol main board. Just plug this module in and use a digital write command to make you projects light up. This module comes with a green LED.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Force Module</h4>
-						<p class="shop-desc">
-							The Protocol force module outputs a variable signal based on the amount of force applied to the resistance pad attached to the module. There are many applications for a force module, and it will work with any module that requires an analog input.
-						</p>
-					</li>
-					<li class="list-group-item">
-						<h4 class="shop-heading">Piezo Module</h4>
-						<p class="shop-desc">
-							The piezo module allows the Protocol system to generate sound. It accepts a PWM signal, which can be generated from any of the Main Board’s digital outputs. This can be used with the Arduino tone library to produce a multitude of different audible frequencies.
-						</p>
-					</li>
-			  </ul>
-			</div>
-		</div>
+			</tbody>
+		</table>
 	</div> -->
-<!-- <div class="col-sm-6 col-sm-offset-2">
-	<div class="content-text panel panel-default shadow-light">
-		<div class="panel-heading">
-			<h2>About Protocol</h2>
-		</div>
-		<div class="panel-body content-text">
-			<p> Protocol electronics is a company made to educate people about
-				the world of electronics. Our product, the protocol development
-				platform, is an education tool to help people learn about how to
-				code, make simple circuits, and make ideas come to life.
-				Conventional prototyping is a long and painful process but Protocol
-				Electronics makes it easier with its line of prototyping tools.
-				Take a look at our products and get making!
-			</p>
-			<br/>
-			<h4>May need more content</h4>
-			<br/>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 	</div>
-</div> -->
-<!-- <div class="col-sm-3">
 
-	<br/>
-	<br/>
-		<div class="shadow-light" data-embed_type="product" data-shop="embeds.myshopify.com" data-product_name="YELLO W"data-product_handle="yello-w" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-button_background_color="30373b"data-button_text_color="ffffff" data-background_color="edede5"></div> <script type="text/javascript"> document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript"src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>'); </script> <noscript><a href="https://embeds.myshopify.com/cart/8829753283:1" target="_blank">Buy YELLO W</a></noscript>
-</div> -->
 
 <div class="about-us col-sm-12">
 <div class="col-sm-6 col-sm-offset-3 about-us">
@@ -339,6 +280,117 @@
 </div>
 
 </div>
+
+<script>
+var modules = [
+	{
+		"Title":"Base",
+		"Text":"The base module attaches to any Arduino in the UNO form factor and 5v logic. It is the translator between the Arduino input and output to the protocol modules",
+		"Images":[
+			"img/base2.png",
+		],
+		"SideImage":"img/base2.png",
+	},
+	{
+		"Title":"Switch",
+		"Text":"The switch module writes either HIGH or LOW to the Arduino based on its position. This can be used to turn an LED on, activate a motor, or turn on a buzzer. Anything that can either be on or off can be controlled with this module",
+		"Images":[
+			"img/button.png",
+			"img/led.png"
+		],
+		"SideImage":"img/button.png",
+	},
+	{
+		"Title":"LED",
+		"Text":"The LED module allows for an LED attachment to the Protocol main board. Just plug this module in and use a digital write command to make you projects light up. This module comes with a green LED",
+		"Images":[
+			"img/led.png"
+		],
+		"SideImage":"img/led.png",
+	},
+	{
+		"Title":"Potentiometer",
+		"Text":"The potentiometer module is an analog input that changes its output value based on its rotational position. This can be used to dim an led or change the tone generated by a piezo buzzer. Anything that requires a variable input to operate can be controlled with this module",
+		"Images":[
+			"img/potentiometer.png"
+		],
+		"SideImage":"img/potentiometer.png",
+	},
+	{
+		"Title":"Servo",
+		"Text":"The servo module controls a small servo on the end of a cable. A servo has about 180 degrees of possible motion, so it is perfect for robotic and precise applications. A servo is a very accurate motor, and it can be attached to any of the main board's digital outputs",
+		"Images":[
+			"img/potentiometer.png"
+		],
+		"SideImage":"img/potentiometer.png",
+	},
+	{
+		"Title":"Force",
+		"Text":"The Protocol force module outputs a variable signal based on the amount of force applied to the resistance pad attached to the module. There are many applications for a force module, and it will work with any module that requires an analog input",
+		"Images":[
+			"img/flex.png"
+		],
+		"SideImage":"img/flex.png",
+	},
+	{
+		"Title":"Piezo",
+		"Text":"The piezo module allows the Protocol system to generate sound. It accepts a PWM signal, which can be generated from any of the Main Board's digital outputs. This can be used with the Arduino tone library to produce a multitude of different audible frequencies",
+		"Images":[
+			"img/flex.png"
+		],
+		"SideImage":"img/flex.png",
+	},
+
+];
+function closePopup(){
+	document.getElementById('veil-container').style.display = 'none';
+	document.getElementById('popup').style.display = 'none';
+}
+function popup(i){
+	document.getElementById('veil-container').style.display = 'block';
+	document.getElementById('popup').style.display = 'block';
+	document.getElementById('popup-title').innerHTML = modules[i].Title + ' Module';
+	document.getElementById('popup-text').innerHTML = modules[i].Text;
+	document.getElementById('popup-image').innerHTML = '<img src=\"' + modules[i].SideImage + '\"/>';
+	var lower = document.getElementById('popup-lower-images');
+	lower.innerHTML = "";
+	for (var j = 0; j < modules[i].Images.length; j++){
+		lower.innerHTML += '<img src=\"' + modules[i].Images[j] + '\"/>'
+	}
+}
+// <a class=\"module-title-link\"href=\"javascript:popup(\''+ modules[i].Title +'\',\''+ modules[i].Text +'\',\'' + modules[i].Image + '\')\"> &nbsp;' + modules[i].Title + ' Module </a>\
+function populatePage(){
+	var table = document.getElementById('shoppe');
+	for (var i = 0; i < modules.length; i++){
+		table.innerHTML = table.innerHTML + '\
+		<tr class=\"shop-item\">\
+			<td class=\"module-shop shadow\">\
+				<div class=\"module-title\">\
+					<a class=\"module-title-link\"href=\"javascript:popup(\''+i+'\')\"> &nbsp;' + modules[i].Title + ' Module </a>\
+				</div>\
+				<div class=\"module-about\">\
+					'+ modules[i].Text +'\
+				</div>\
+			</td>\
+			<td class=\"side-wires\" style=\"z-index:1;\">\
+				<div></div>\
+				<div></div>\
+				<div></div>\
+				<div></div>\
+			</td>\
+			<td>\
+				<img class=\"shadow\" src=\"'+ modules[i].SideImage +'\"/>\
+			</td>\
+			</tr>\
+			<tr>\
+				<td class="shop-spacer" colspan="3"></td>\
+			</tr>\
+			'
+	}
+}
+closePopup();
+populatePage();
+</script>
 <!-- END PAGE CONTENT -->
 
 <script src="js/jquery.min.js"></script>
@@ -347,5 +399,6 @@
 <script href="js/icheck.min.js"></script>
 <script href="js/jquery.fs.selecter.min.js"></script>
 <script href="js/jquery.fs.stepper.min.js"></script>
+
 </body>
 </html>
