@@ -76,6 +76,7 @@
 		min-height: 100px;
 		width:100%;
 		max-height:100px;
+		z-index:30;
 		/*background-color:#000;*/
 		/*border: 1px solid blue;*/
 		position:relative;
@@ -87,7 +88,7 @@
 		min-height:100px;
 		/*border: 1px solid purple;*/
 		background-color: #a52b27;
-		z-index:4;
+		z-index:32;
 		margin-left:0px;
 		margin-right:0px;
 		display: flex;
@@ -151,6 +152,7 @@
 		margin-left:50%;
 	}
 	.nav-table-holder{
+		/*z-index:31;*/
 		/*background-image: url('img/pcb.png');*/
 	}
 	div.stretchy-wrapper{
@@ -382,8 +384,14 @@
 			border:0px;
 			padding:0px;
 		}
-	}
+		.x-inverse-collapse{
+			display:block !important;
+		}
 
+	}
+	.x-inverse-collapse{
+		display:none;
+	}
 	.x-collapse{}
 
 	.shadow{
@@ -556,3 +564,59 @@
 	#shoppe{
 		/*vertical-align: top;*/
 	}
+	.middle-img{
+		width:100%;
+	}
+
+	/*.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}*/
+
+.catch-3-words{
+	background-color:#A52B27;
+	margin-bottom:3%;
+	/*margin-left:20%;*/
+	/*margin-right:20%;*/
+}
+.catch-3-words *{
+	color:#fff;
+	font-size: 140%;
+	text-align: center;
+}
+
+.fixed-table-holder{
+	position:fixed;
+	z-index:28;
+
+}
+.fixed-table-holder table{
+	width:75%;
+	margin-top:40%;
+	/*border:1px solid black;*/
+}
+.fixed-table-holder *{
+	color:#fff;
+	text-align:center;
+}
+.fixed-table-holder.side-module-x{
+	/*z-index: 30;*/
+	/*vertical-align: middle;*/
+}
+.cart{
+	/*text-align:center;
+	background-size:40px 40px;*/
+	margin:10%;
+	max-width:  60px;
+	max-height: 60px;
+}
+#popup-lower-images{
+	display: none;
+}
