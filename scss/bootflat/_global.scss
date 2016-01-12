@@ -1,5 +1,15 @@
 // Global Variables
 //------------------------------------------------------
+
+$theme-main:#A52B27;
+$theme-dark:#752927;
+
+$panel-primary:$theme-main;
+$panel-normal:$theme-dark;
+
+
+$panel-font-color:#fff;
+
 $modules:                     () !default;
 
 $experimental:                true !default;
@@ -22,7 +32,7 @@ $aqua-light:                  #4FC1E9 !default;
 $mint-dark:                   #37BC9B !default;
 $mint-light:                  #48CFAD !default;
 
-//$mint-dark: #752927; 
+//$mint-dark: #752927;
 //$mint-light: #a52b27;
 
 $red-dark: #752927;
@@ -145,13 +155,13 @@ $navbar-inverse-background-color:            $black !default;
 }
 
 // We use this to control border radius.
-@mixin radius($type: border-radius, $value: $global-radius) {	
-	@include prefixer($property: $type, $value: $value, $prefixes: webkit moz spec);	
+@mixin radius($type: border-radius, $value: $global-radius) {
+	@include prefixer($property: $type, $value: $value, $prefixes: webkit moz spec);
 }
 
 // We use this to control box shadow.
 @mixin box-shadow($value) {
-	@include prefixer($property: box-shadow, $value: $value, $prefixes: webkit moz spec);		
+	@include prefixer($property: box-shadow, $value: $value, $prefixes: webkit moz spec);
 }
 // We use this to creat animation effect.
 // Examples:
@@ -161,7 +171,7 @@ $navbar-inverse-background-color:            $black !default;
 // }
 // .object-to-animate {
 //   @include animation(move-the-object .5s 1);
-// } 
+// }
 @mixin animation ($value...) {
 	@include prefixer($property: animation, $value: $value, $prefixes: webkit moz spec);
 }

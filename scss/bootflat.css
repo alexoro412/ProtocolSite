@@ -1645,33 +1645,33 @@ a.list-group-item {
     -moz-box-shadow: none;
     box-shadow: none; }
   .panel .list-group-item:first-child {
-    border-top: 1px solid #E6E9ED; }
+    border-top: 1px solid #752927; }
   .panel-heading {
     -webkit-border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0; }
   .panel-title {
     font-size: 14px;
-    color: #434A54;
+    color: #fff;
     font-weight: normal; }
   .panel-footer {
-    background-color: #E6E9ED;
-    border-top-color: #E6E9ED;
+    background-color: #752927;
+    border-top-color: #752927;
     -webkit-border-radius: 0 0 4px 4px;
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px; }
   .panel-default {
-    border-color: #E6E9ED; }
+    border-color: #752927; }
     .panel-default > .panel-heading {
-      color: #434A54;
-      background-color: #E6E9ED;
-      border-color: #E6E9ED; }
+      color: #fff;
+      background-color: #752927;
+      border-color: #752927; }
   .panel-primary {
-    border-color: #3BAFDA; }
+    border-color: #A52B27; }
     .panel-primary > .panel-heading {
       color: #FFFFFF;
-      background-color: #3BAFDA;
-      border-color: #3BAFDA; }
+      background-color: #A52B27;
+      border-color: #A52B27; }
   .panel-success {
     border-color: #8CC152; }
     .panel-success > .panel-heading {
@@ -1727,7 +1727,7 @@ a.list-group-item {
     -moz-border-radius: 0 0 4px 0;
     border-radius: 0 0 4px 0; }
   .panel > .panel-body + .table, .panel > .panel-body + .table-responsive {
-    border-top-color: #E6E9ED; }
+    border-top-color: #752927; }
 
 /**
  * accordion

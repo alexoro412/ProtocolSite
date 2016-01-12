@@ -35,7 +35,7 @@
 							<div class="panel-heading">
 								<span id="popup-title">&nbsp;</span><button type="button" class="close" onclick="javascript:closePopup();">&times;</button>
 							</div>
-							<div class="panel-body" >
+							<div class="panel-body">
 								<table>
 									<tbody>
 										<tr>
@@ -57,9 +57,13 @@
 
 									</tbody>
 								</table>
+								<div class="col-sm-4 col-sm-offset-4" id="popup-space">
+								</div>
 								<br/>
 								<!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
+								<div id="add-to-cart-btn">
 								<button type="button" class="btn btn-default">Add to Cart</button>
+							</div>
 							</div>
 						</div>
 					<!-- </div> -->
@@ -187,22 +191,24 @@
 			</td>
 		</tr>
 
+
+
+	</tbody></table>
+</div>
+
+<div class="fixed-table-holder-left x-collapse">
+	<br/>
+	<br/>
+	<table><tbody>
 		<tr>
-			<td class="side-wires">
 
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-
-			</td>
 			<td class="module-container">
 				<br/>
-				<a href="design.html">
-				<div class="side-module-x side-module-x-right">
+				<a href="javascript:popupCart(cart)">
+				<div class="side-module-x side-module-x-left">
 					<!-- <div class="side-module-x-inside"></div> -->
 					<!-- <a href="shop.html"> -->
-						<div class="side-module-x-cover x-button-right">
+						<div class="side-module-x-cover">
 							<br/>
 							<!-- <img src="img/button.png"/> -->
 							<!-- <span class="side-module-title">Cart</span> -->
@@ -222,6 +228,14 @@
 				<!-- </a> -->
 				</div>
 			</a>
+			</td>
+			<td class="side-wires">
+
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+
 			</td>
 		</tr>
 
@@ -337,15 +351,14 @@
 		<br class="x-collapse"/>
 	</div>
 <!-- <div class="board-spacer"></div> -->
-<div class="col-sm-10 col-sm-offset-1 panel-heading catch-3-words x-collapse shadow">
+<!-- <div class="col-sm-10 col-sm-offset-1 panel-heading catch-3-words x-collapse shadow">
 <div class="col-sm-2 col-sm-offset-3">Design </div>
 <div class="col-sm-2">Connect </div>
 <div class="col-sm-2">Program </div>
-</div>
+</div> -->
 
 <nav class="navbar navbar-default x-inverse-collapse" style="border:0px;">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header quark">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -357,15 +370,29 @@
     </div>
     <div class="collapse navbar-collapse quark " id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">About</a></li>
-				<li><a href="#">Education</a></li>
-				<li class="active"><a href="#">Shop<span class="sr-only">(current)</span></a></li>
+
+				<li><a href="#">Design</a></li>
+				<li><a href="#">Connect</a></li>
+				<li><a href="#">Program</a></li>
+				<!-- <br/> -->
+
+      </ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">About<span class="sr-only">(current)</span></a></li>
+				<li class="active"><a href="#">Education</a></li>
+				<li><a href="shop.html">Shop</a></li>
 				<li><a href="#">Resources</a></li>
 				<li><a href="#">Arduino</a></li>
+				<li><a href="#"><span class="shopping-cart-xs">Cart</span></a></li>
+			</ul>
+
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
+<!-- <div class="col-xs-4 col-xs-offset-8 shopping-cart-xs x-inverse-collapse">
+<span class="cart glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+</div> -->
 <!-- BEGIN PAGE CONTENT -->
 <div class="bs-component">
 	<br/>
@@ -506,6 +533,19 @@ var modules = [
 	},
 
 ];
+
+var cart = {
+	"Title":"Your cart",
+	"Text":"This will show your cart",
+	// "Images":[
+	// 	"img/flex.png"
+	// ],
+	// "SideImage":"img/flex.png",
+	"Items":[
+		["Item",3,"img/flex.png"],
+		["Thing!",1,"img/potentiometer.png"]
+	],
+};
 function closePopup(){
 	document.getElementById('veil-container').style.display = 'none';
 	document.getElementById('popup').style.display = 'none';
@@ -516,11 +556,40 @@ function popup(i){
 	document.getElementById('popup-title').innerHTML = modules[i].Title + ' Module';
 	document.getElementById('popup-text').innerHTML = modules[i].Text;
 	document.getElementById('popup-image').innerHTML = '<img src=\"' + modules[i].SideImage + '\"/>';
+	document.getElementById('popup-space').innerHTML = '';
+	document.getElementById('add-to-cart-btn').innerHTML = '<button type="button" class="btn btn-default">Add to Cart</button>';
 	var lower = document.getElementById('popup-lower-images');
 	lower.innerHTML = "";
 	for (var j = 0; j < modules[i].Images.length; j++){
 		lower.innerHTML += '<img src=\"' + modules[i].Images[j] + '\"/>'
 	}
+}
+function popupCart(s){
+	document.getElementById('veil-container').style.display = 'block';
+	document.getElementById('popup').style.display = 'block';
+	document.getElementById('popup-title').innerHTML = s.Title;
+	document.getElementById('popup-text').innerHTML = '';
+	var list = document.getElementById('popup-space');
+	document.getElementById('add-to-cart-btn').innerHTML = '';
+	list.innerHTML = '<div class="list-group">'
+	for(var j = 0;j<s.Items.length;j++){
+		list.innerHTML += '<button type="button" class="list-group-item">'+ s.Items[j][0] + ' &nbsp; <span class="badge">'+ s.Items[j][1]+'</span></button>';
+	}
+	list.innerHTML += '</div>'
+//   <button type="button" class="list-group-item">Cras justo odio</button>\
+//   <button type="button" class="list-group-item">Dapibus ac facilisis in</button>\
+//   <button type="button" class="list-group-item">Morbi leo risus</button>\
+//   <button type="button" class="list-group-item">Porta ac consectetur ac</button>\
+//   <button type="button" class="list-group-item">Vestibulum at eros</button>\
+// </div>\
+	// document.getElementById('popup-text').style.width = '100%';
+	// document.getElementById('popup-image').innerHTML = '<img src=\"' + s.SideImage + '\"/>';
+	document.getElementById('popup-image').innerHTML = '';
+	var lower = document.getElementById('popup-lower-images');
+	lower.innerHTML = "";
+	// for (var j = 0; j < modules[i].Images.length; j++){
+	// 	lower.innerHTML += '<img src=\"' + s.Images[j] + '\"/>'
+	// }
 }
 // <a class=\"module-title-link\"href=\"javascript:popup(\''+ modules[i].Title +'\',\''+ modules[i].Text +'\',\'' + modules[i].Image + '\')\"> &nbsp;' + modules[i].Title + ' Module </a>\
 function populatePage(){
