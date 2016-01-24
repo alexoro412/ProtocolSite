@@ -35,35 +35,7 @@
 							<div class="panel-heading">
 								<span id="popup-title">&nbsp;</span><button type="button" class="close" onclick="javascript:closePopup();">&times;</button>
 							</div>
-							<div class="panel-body">
-								<table>
-									<tbody>
-										<tr>
-											<td>
-												<p id="popup-text">&nbsp;</p>
-											</td>
-											<td class="popup-text-spacer">
-
-											</td>
-											<td>
-												<div id="popup-image"></div>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<div id="popup-lower-images"></div>
-											</td>
-										</tr>
-
-									</tbody>
-								</table>
-								<div class="col-sm-4 col-sm-offset-4" id="popup-space">
-								</div>
-								<br/>
-								<!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
-								<!-- <div id="add-to-cart-btn">
-								<button type="button" class="btn btn-default">Add to Cart</button>
-							</div> -->
+							<div class="panel-body" id="popup-text">
 							</div>
 						</div>
 					<!-- </div> -->
@@ -79,7 +51,6 @@
 <!-- <div id="popup-catch" onclick="closePopup()">
 
 </div> -->
-
 <div class="fixed-table-holder x-collapse">
 	<br/>
 	<br/>
@@ -131,7 +102,7 @@
 			</td>
 			<td class="module-container">
 				<br/>
-				<a href="design.html">
+				<a href="construct.html">
 				<div class="side-module-x side-module-x-right">
 					<!-- <div class="side-module-x-inside"></div> -->
 					<!-- <a href="shop.html"> -->
@@ -167,7 +138,7 @@
 			</td>
 			<td class="module-container">
 				<br/>
-				<a href="design.html">
+				<a href="#">
 				<div class="side-module-x side-module-x-right">
 					<!-- <div class="side-module-x-inside"></div> -->
 					<!-- <a href="shop.html"> -->
@@ -189,163 +160,170 @@
 				</div>
 			</a>
 			</td>
+
 		</tr>
-
-
-
 	</tbody></table>
 </div>
 
-
-
 <!-- <div class="board-spacer"></div> -->
 <!-- <h4 style="text-align:center;">Background image needed</h4> -->
-	<div class="nav-table-holder">
-		<!-- <br/> -->
-		<table class="nav-table">
-			<br class="x-collapse"/>
-			<tr>
-				<!-- <td rowspan="2" class="nav-margin"></td> -->
-				<td class="module-container">
-					<a href="#">
-					<div class="side-module-x side-module-x-left">
-						<!-- <div class="side-module-x-inside"></div> -->
+<div class="nav-table-holder">
+	<!-- <br/> -->
+	<table class="nav-table">
+		<br class="x-collapse"/>
+		<tr>
+			<!-- <td rowspan="2" class="nav-margin"></td> -->
+			<td class="module-container">
+				<a href="shop.html">
+				<div class="side-module-x side-module-x-left">
+					<!-- <div class="side-module-x-inside"></div> -->
+					<!-- <a href="shop.html"> -->
 						<div class="side-module-x-cover x-button-left">
 							<br/>
 							<!-- <img src="img/button.png"/> -->
 							<span class="side-module-title">Shop</span>
 						</div>
-						<div class="side-module-x-inside">
-							<br/>
-							<span>Protocol dev. board and accessories</span>
-						</div>
+					<!-- </a> -->
+					<!-- <a class="side-module-link" href="shop.html"> -->
+					<div class="side-module-x-inside">
+						<!-- <a href="shop.html"> -->
+						<br/>
+						<span>Protocol dev. board and accessories</span>
+						<!-- <br/> -->
+					<!-- </a> -->
+					</div>
+				<!-- </a> -->
+				</div>
+			</a>
+			</td>
+			<td class="side-wires">
+
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+
+			</td>
+			<td rowspan="2" colspan="2" class="board-container">
+				<a href="index.html"><img src="img/base2.png" id="base"/></a>
+			</td>
+			<td class="side-wires">
+
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+
+			</td>
+			<td class="module-container">
+				<a href="education.html">
+				<div class="side-module-x side-module-x-right">
+					<!-- <div class="side-module-x-inside"></div> -->
+					<div class="side-module-x-cover x-pot">
+						<br/>
+						<!-- <img src="img/button.png"/> -->
+						<span class="side-module-title">Schools</span>
+					</div>
+					<div class="side-module-x-inside">
+						<br/>
+						<span>Protocol for middle and high school</span>
+					</div>
+				</div>
+			</a>
+			</td>
+			<!-- <td rowspan="2" class="nav-margin">
+			</td> -->
+		</tr>
+
+		<tr>
+			<td class="module-container">
+				<a href="contact.html">
+				<div class="side-module-x side-module-x-left">
+					<!-- <div class="side-module-x-inside"></div> -->
+					<div class="side-module-x-cover x-led-left">
+						<br/>
+						<!-- <img src="img/button.png"/> -->
+						<span class="side-module-title">Contact</span>
+					</div>
+					<div class="side-module-x-inside">
+						<br/>
+						<span>
+							<!-- Downloads & Tutorials -->
+							Contact us &nbsp;
+						</span>
+					</div>
+				</div>
+			</a>
+			</td>
+			<td class="side-wires">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+			</td>
+			<td class="side-wires">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+			</td>
+			<td class="module-container">
+				<a href="https://www.arduino.cc/">
+				<div class="side-module-x side-module-x-right">
+					<!-- <div class="side-module-x-inside"></div> -->
+					<div class="side-module-x-cover x-flex">
+						<br/>
+						<!-- <img src="img/button.png"/> -->
+						<span class="side-module-title">Arduino</span>
+					</div>
+					<div class="side-module-x-inside">
+						<br/>
+						<span>Info on the Arduino platform</span>
+					</div>
 					</div>
 				</a>
-				</td>
-				<td class="side-wires">
+			</td>
+		</tr>
+	</table>
+	<br class="x-collapse"/>
+</div>
 
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-
-				</td>
-				<td rowspan="2" colspan="2" class="board-container">
-					<a href="index.html"><img src="img/base2.png" id="base"/></a>
-				</td>
-				<td class="side-wires">
-
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-
-				</td>
-				<td class="module-container">
-					<a href="education.html">
-					<div class="side-module-x side-module-x-right">
-						<!-- <div class="side-module-x-inside"></div> -->
-						<div class="side-module-x-cover x-pot">
-							<br/>
-							<!-- <img src="img/button.png"/> -->
-							<span class="side-module-title">Schools</span>
-						</div>
-						<div class="side-module-x-inside">
-							<br/>
-							<span>Protocol for middle and high school</span>
-						</div>
-					</div>
-				</a>
-				</td>
-				<!-- <td rowspan="2" class="nav-margin">
-				</td> -->
-			</tr>
-
-			<tr>
-				<td class="module-container">
-					<div class="side-module-x side-module-x-left">
-						<!-- <div class="side-module-x-inside"></div> -->
-						<div class="side-module-x-cover x-led-left">
-							<br/>
-							<!-- <img src="img/button.png"/> -->
-							<span class="side-module-title">Contact</span>
-						</div>
-						<div class="side-module-x-inside">
-							<br/>
-							<span>Contact us</span>
-						</div>
-					</div>
-				</td>
-				<td class="side-wires">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-				</td>
-				<td class="side-wires">
-						<div></div>
-						<div></div>
-						<div></div>
-						<div></div>
-				</td>
-				<td class="module-container">
-					<div class="side-module-x side-module-x-right">
-						<!-- <div class="side-module-x-inside"></div> -->
-						<div class="side-module-x-cover x-flex">
-							<br/>
-							<!-- <img src="img/button.png"/> -->
-							<span class="side-module-title">Arduino</span>
-						</div>
-						<div class="side-module-x-inside">
-							<br/>
-							<span>Info on the Arduino platform</span>
-						</div>
-					</div>
-				</td>
-			</tr>
-		</table>
-		<br class="x-collapse"/>
-	</div>
-<!-- <div class="board-spacer"></div> -->
-<!-- <div class="col-sm-10 col-sm-offset-1 panel-heading catch-3-words x-collapse shadow">
-<div class="col-sm-2 col-sm-offset-3">Design </div>
-<div class="col-sm-2">Connect </div>
-<div class="col-sm-2">Program </div>
-</div> -->
 
 <nav class="navbar navbar-default x-inverse-collapse" style="border:0px;">
-  <div class="container-fluid">
-    <div class="navbar-header quark">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Protocol</a>
-    </div>
-    <div class="collapse navbar-collapse quark " id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+<div class="container-fluid">
+	<div class="navbar-header quark">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Protocol</a>
+	</div>
+	<div class="collapse navbar-collapse quark " id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
 
-				<li><a href="#">Design</a></li>
-				<li class="active"><a href="#">Construct<span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Program</a></li>
-				<!-- <br/> -->
+			<li><a href="design.html">Design</a></li>
+			<li><a href="construct.html">Construct</a></li>
+			<li class="active"><a href="#">Program</a></li>
+			<!-- <br/> -->
 
-      </ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Education</a></li>
-				<li><a href="shop.html">Shop</a></li>
-				<li><a href="#">Resources</a></li>
-				<li><a href="#">Arduino</a></li>
-				<!-- <li><a href="#"><span class="shopping-cart-xs">Cart</span></a></li> -->
-			</ul>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="index.html">About</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="https://www.arduino.cc">Arduino</a></li>
+			<!-- <li><a href="#"><span class="shopping-cart-xs">Cart</span></a></li> -->
+		</ul>
 
-      </ul>
-    </div>
-  </div>
+		</ul>
+	</div>
+</div>
 </nav>
+
+
 <!-- <div class="col-xs-4 col-xs-offset-8 shopping-cart-xs x-inverse-collapse">
 <span class="cart glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 </div> -->
@@ -359,12 +337,12 @@
     <h3>Sample Code</h3>
   </div>
   <div class="panel-body content-text">
-    The following is sample code for various protocol modules
+    <h4>The following is sample code for various protocol modules</h4>
   </div>
 </div>
 	</div>
 	<div class="col-sm-5 col-sm-offset-3">
-		<table class="shop-table">
+		<table class="shop-table" style="width:100%;">
 			<tbody id="shoppe">
 				<!-- <tr>
 					<td class="shop-spacer" colspan="3"></td>
@@ -477,63 +455,45 @@ void loop() {\n\
 }",
 	},
 	{
-		"Title":"Switch",
-		"Text":"The switch module writes either HIGH or LOW to the Arduino based on its position. This can be used to turn an LED on, activate a motor, or turn on a buzzer. Anything that can either be on or off can be controlled with this module",
-		"Images":[
-			"img/button.png",
-			"img/led.png"
-		],
-		"SideImage":"img/button.png",
+		"Title":"Pushbutton",
+		"Text":"\
+		<ul>\
+			<li>Make your projects interactive</li>\
+			<li>On/Off switches for projects</li>\
+		</ul>",
+		"Code":"\
+/*\n\
+  This sketch is example code for the Push Button module\n\
+\n\
+  By Samuel Cohen for Protocol Electronics LLC\n\
+\n\
+  Plug a push button module into the aproprate port to make this code work.\n\
+ */\n\
+\n\
+int buttonPin = 3; // this will save 3 to the value of buttonPin so that when we reference button pin, the arduino will know which pin to use\n\
+int LEDPin = 13; // this will save pin 13 as LEDPin so that the arduino will know to activate pin 13 when we say \"LEDPin\"\n\
+int delayTime = 1000; // this variable will store the amount of time between blinks in milliseconds (1000ms = 1s)\n\
+\n\
+void setup() {\n\
+  pinMode(buttonPin, INPUT); // this tells the arduino to use our buttonPin as an input\n\
+  pinMode(LEDPin, OUTPUT); // this tells the arduino to use our LEDPin as an output\n\
+\n\
+}\n\
+\n\
+void loop() {\n\
+  digitalWrite(LEDPin, HIGH); // tells the arduino to power LEDPin ON\n\
+  delay(delayTime); // stops program for amount of time in millis\n\
+  digitalWrite(LEDPin, LOW); // tells the arduino to power LEDPin OFF\n\
+  delay(delayTime);\n\
+}\n\
+\n\
+/*\n\
+suggestions:\n\
+  1. try changing the value in delay time to something like 500. What happens?\n\
+  2. try changing the value in the second delay but not the first by writing a physical value eg. delay(500);. What happens?\n\
+*/\n\
+		",
 	},
-	{
-		"Title":"LED",
-		"Text":"The LED module allows for an LED attachment to the Protocol main board. Just plug this module in and use a digital write command to make you projects light up. This module comes with a green LED",
-		"Images":[
-			"img/led.png"
-		],
-		"SideImage":"img/led.png",
-	},
-	{
-		"Title":"Potentiometer",
-		"Text":"The potentiometer module is an analog input that changes its output value based on its rotational position. This can be used to dim an led or change the tone generated by a piezo buzzer. Anything that requires a variable input to operate can be controlled with this module",
-		"Images":[
-			"img/potentiometer.png"
-		],
-		"SideImage":"img/potentiometer.png",
-	},
-	{
-		"Title":"Servo",
-		"Text":"The servo module controls a small servo on the end of a cable. A servo has about 180 degrees of possible motion, so it is perfect for robotic and precise applications. A servo is a very accurate motor, and it can be attached to any of the main board's digital outputs",
-		"Images":[
-			"img/potentiometer.png"
-		],
-		"SideImage":"img/potentiometer.png",
-	},
-	{
-		"Title":"Force",
-		"Text":"The Protocol force module outputs a variable signal based on the amount of force applied to the resistance pad attached to the module. There are many applications for a force module, and it will work with any module that requires an analog input",
-		"Images":[
-			"img/flex.png"
-		],
-		"SideImage":"img/flex.png",
-	},
-	{
-		"Title":"Piezo",
-		"Text":"The piezo module allows the Protocol system to generate sound. It accepts a PWM signal, which can be generated from any of the Main Board's digital outputs. This can be used with the Arduino tone library to produce a multitude of different audible frequencies",
-		"Images":[
-			"img/flex.png"
-		],
-		"SideImage":"img/flex.png",
-	},
-	{
-		"Title":"Flex",
-		"Text":"The flex module produces differing values based on the amount that it is flexed. The flex sensor can be used to measure any sort of angle that changes over time. The protocol flex sensor can be attached to any analog port on the protocol Main Board.",
-		"Images":[
-			"img/flex.png"
-		],
-		"SideImage":"img/flex.png",
-	},
-
 ];
 
 var cart = {
@@ -598,8 +558,8 @@ function populatePage(){
 	var table = document.getElementById('shoppe');
 	for (var i = 0; i < modules.length; i++){
 		table.innerHTML = table.innerHTML + '\
-		<tr class=\"shop-item\">\
-			<td class=\"module-shop shadow\">\
+		<tr class=\"shop-item\" style=\"width:100% !important;\">\
+			<td class=\"module-shop shadow\" style=\"width:100% !important;\">\
 				<div class=\"module-title\">\
 					<a class=\"module-title-link\"href=\"javascript:popup(\''+i+'\')\"> &nbsp;' + modules[i].Title + ' Module </a>\
 				</div>\
