@@ -61,9 +61,9 @@
 								</div>
 								<br/>
 								<!-- <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/> -->
-								<div id="add-to-cart-btn">
+								<!-- <div id="add-to-cart-btn">
 								<button type="button" class="btn btn-default">Add to Cart</button>
-							</div>
+							</div> -->
 							</div>
 						</div>
 					<!-- </div> -->
@@ -196,51 +196,7 @@
 	</tbody></table>
 </div>
 
-<div class="fixed-table-holder-left x-collapse">
-	<br/>
-	<br/>
-	<table><tbody>
-		<tr>
 
-			<td class="module-container">
-				<br/>
-				<a href="javascript:popupCart(cart)">
-				<div class="side-module-x side-module-x-left">
-					<!-- <div class="side-module-x-inside"></div> -->
-					<!-- <a href="shop.html"> -->
-						<div class="side-module-x-cover">
-							<br/>
-							<!-- <img src="img/button.png"/> -->
-							<!-- <span class="side-module-title">Cart</span> -->
-							<br/>
-							<img src="img/2772.png" class="cart"/>
-							<!-- <span class="cart glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> -->
-						</div>
-					<!-- </a> -->
-					<!-- <a class="side-module-link" href="shop.html"> -->
-					<div class="side-module-x-inside">
-						<!-- <a href="shop.html"> -->
-						<br/>
-						<span>View your cart</span>
-						<!-- <br/> -->
-					<!-- </a> -->
-					</div>
-				<!-- </a> -->
-				</div>
-			</a>
-			</td>
-			<td class="side-wires">
-
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
-
-			</td>
-		</tr>
-
-	</tbody></table>
-</div>
 
 <!-- <div class="board-spacer"></div> -->
 <!-- <h4 style="text-align:center;">Background image needed</h4> -->
@@ -372,18 +328,18 @@
       <ul class="nav navbar-nav">
 
 				<li><a href="#">Design</a></li>
-				<li><a href="#">Construct</a></li>
+				<li class="active"><a href="#">Construct<span class="sr-only">(current)</span></a></li>
 				<li><a href="#">Program</a></li>
 				<!-- <br/> -->
 
       </ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">About<span class="sr-only">(current)</span></a></li>
-				<li class="active"><a href="#">Education</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Education</a></li>
 				<li><a href="shop.html">Shop</a></li>
 				<li><a href="#">Resources</a></li>
 				<li><a href="#">Arduino</a></li>
-				<li><a href="#"><span class="shopping-cart-xs">Cart</span></a></li>
+				<!-- <li><a href="#"><span class="shopping-cart-xs">Cart</span></a></li> -->
 			</ul>
 
       </ul>
@@ -397,7 +353,17 @@
 <div class="bs-component">
 	<br/>
 
-	<div class="col-sm-7 col-sm-offset-3">
+	<div class="col-sm-5 col-sm-offset-3">
+		<div class="content-text panel panel-default shadow-light">
+  <div class="panel-heading">
+    <h3>Sample Code</h3>
+  </div>
+  <div class="panel-body content-text">
+    The following is sample code for various protocol modules
+  </div>
+</div>
+	</div>
+	<div class="col-sm-5 col-sm-offset-3">
 		<table class="shop-table">
 			<tbody id="shoppe">
 				<!-- <tr>
@@ -475,12 +441,40 @@
 <script>
 var modules = [
 	{
-		"Title":"Base",
-		"Text":"The base module attaches to any Arduino in the UNO form factor and 5v logic. It is the translator between the Arduino input and output to the protocol modules",
-		"Images":[
-			"img/base2.png",
-		],
-		"SideImage":"img/base2.png",
+		"Title":"Potentiometer",
+		"Text":"\
+		<ul>\
+			<li>Control a slider</li>\
+			<li>Vary LED brightness</li>\
+			<li>Change Piezo Tone</li>\
+		",
+		"Code":"\
+/*\n\
+	This sketch is example code for the Potentiometer module\n\
+	\n\
+	By Samuel Cohen for Protocol Electronics LLC\n\
+	\n\
+	Simply plug a rotary or slide potentiometer into the appropriate port to make this code work.\n\
+*/\n\
+int POTpin = A0;\n\
+int POTvalue = 0;\n\
+int LEDpin = 13;\n\
+int delayTime = 0;\n\
+void setup() {\n\
+	pinMode(POTpin, INPUT);\n\
+	pinMode(LEDpin, OUTPUT);\n\
+	\n\
+}\n\
+\n\
+void loop() {\n\
+	POTValue = analogRead(POTpin);\n\
+	delayTime = map(POTValue, 0, 1023, 100, 1000);\n\
+	\n\
+	digitalWrite(LEDpin, HIGH);\n\
+	delay(delayTime);\n\
+	digitalWrite(LEDpin, LOW);\n\
+	delay(delayTime);\n\
+}",
 	},
 	{
 		"Title":"Switch",
@@ -561,44 +555,44 @@ function closePopup(){
 function popup(i){
 	document.getElementById('veil-container').style.display = 'block';
 	document.getElementById('popup').style.display = 'block';
-	document.getElementById('popup-title').innerHTML = modules[i].Title + ' Module';
-	document.getElementById('popup-text').innerHTML = modules[i].Text;
-	document.getElementById('popup-image').innerHTML = '<img src=\"' + modules[i].SideImage + '\"/>';
+	document.getElementById('popup-title').innerHTML = modules[i].Title + ' Module Sample Code';
+	document.getElementById('popup-text').innerHTML = '<pre>'+ modules[i].Code + '</pre>';
+	// document.getElementById('popup-image').innerHTML = '<img src=\"' + modules[i].SideImage + '\"/>';
 	document.getElementById('popup-space').innerHTML = '';
-	document.getElementById('add-to-cart-btn').innerHTML = '<button type="button" class="btn btn-default">Add to Cart</button>';
+	// document.getElementById('add-to-cart-btn').innerHTML = '<button type="button" class="btn btn-default">Add to Cart</button>';
 	var lower = document.getElementById('popup-lower-images');
 	lower.innerHTML = "";
 	for (var j = 0; j < modules[i].Images.length; j++){
 		lower.innerHTML += '<img src=\"' + modules[i].Images[j] + '\"/>'
 	}
 }
-function popupCart(s){
-	document.getElementById('veil-container').style.display = 'block';
-	document.getElementById('popup').style.display = 'block';
-	document.getElementById('popup-title').innerHTML = s.Title;
-	document.getElementById('popup-text').innerHTML = '';
-	var list = document.getElementById('popup-space');
-	document.getElementById('add-to-cart-btn').innerHTML = '';
-	list.innerHTML = '<p style="text-align:center"><h3>Under Construction</h3></p><div class="list-group">'
-	for(var j = 0;j<s.Items.length;j++){
-		list.innerHTML += '<button type="button" class="list-group-item">'+ s.Items[j][0] + ' &nbsp; <span class="badge">'+ s.Items[j][1]+'</span></button>';
-	}
-	list.innerHTML += '</div>'
-//   <button type="button" class="list-group-item">Cras justo odio</button>\
-//   <button type="button" class="list-group-item">Dapibus ac facilisis in</button>\
-//   <button type="button" class="list-group-item">Morbi leo risus</button>\
-//   <button type="button" class="list-group-item">Porta ac consectetur ac</button>\
-//   <button type="button" class="list-group-item">Vestibulum at eros</button>\
-// </div>\
-	// document.getElementById('popup-text').style.width = '100%';
-	// document.getElementById('popup-image').innerHTML = '<img src=\"' + s.SideImage + '\"/>';
-	document.getElementById('popup-image').innerHTML = '';
-	var lower = document.getElementById('popup-lower-images');
-	lower.innerHTML = "";
-	// for (var j = 0; j < modules[i].Images.length; j++){
-	// 	lower.innerHTML += '<img src=\"' + s.Images[j] + '\"/>'
-	// }
-}
+// function popupCart(s){
+// 	document.getElementById('veil-container').style.display = 'block';
+// 	document.getElementById('popup').style.display = 'block';
+// 	document.getElementById('popup-title').innerHTML = s.Title;
+// 	document.getElementById('popup-text').innerHTML = '';
+// 	var list = document.getElementById('popup-space');
+// 	document.getElementById('add-to-cart-btn').innerHTML = '';
+// 	list.innerHTML = '<p style="text-align:center"><h3>Under Construction</h3></p><div class="list-group">'
+// 	for(var j = 0;j<s.Items.length;j++){
+// 		list.innerHTML += '<button type="button" class="list-group-item">'+ s.Items[j][0] + ' &nbsp; <span class="badge">'+ s.Items[j][1]+'</span></button>';
+// 	}
+// 	list.innerHTML += '</div>'
+// //   <button type="button" class="list-group-item">Cras justo odio</button>\
+// //   <button type="button" class="list-group-item">Dapibus ac facilisis in</button>\
+// //   <button type="button" class="list-group-item">Morbi leo risus</button>\
+// //   <button type="button" class="list-group-item">Porta ac consectetur ac</button>\
+// //   <button type="button" class="list-group-item">Vestibulum at eros</button>\
+// // </div>\
+// 	// document.getElementById('popup-text').style.width = '100%';
+// 	// document.getElementById('popup-image').innerHTML = '<img src=\"' + s.SideImage + '\"/>';
+// 	document.getElementById('popup-image').innerHTML = '';
+// 	var lower = document.getElementById('popup-lower-images');
+// 	lower.innerHTML = "";
+// 	// for (var j = 0; j < modules[i].Images.length; j++){
+// 	// 	lower.innerHTML += '<img src=\"' + s.Images[j] + '\"/>'
+// 	// }
+// }
 // <a class=\"module-title-link\"href=\"javascript:popup(\''+ modules[i].Title +'\',\''+ modules[i].Text +'\',\'' + modules[i].Image + '\')\"> &nbsp;' + modules[i].Title + ' Module </a>\
 function populatePage(){
 	var table = document.getElementById('shoppe');
@@ -612,15 +606,6 @@ function populatePage(){
 				<div class=\"module-about\">\
 					'+ modules[i].Text +'\
 				</div>\
-			</td>\
-			<td class=\"side-wires\" style=\"z-index:1;\">\
-				<div></div>\
-				<div></div>\
-				<div></div>\
-				<div></div>\
-			</td>\
-			<td>\
-				<img class=\"shadow\" src=\"'+ modules[i].SideImage +'\"/>\
 			</td>\
 			</tr>\
 			<tr>\

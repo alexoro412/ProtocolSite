@@ -63,7 +63,7 @@
 				</td>
 				<td class="module-container">
 					<br/>
-					<a href="construct.html">
+					<a href="design.html">
 					<div class="side-module-x side-module-x-right">
 						<!-- <div class="side-module-x-inside"></div> -->
 						<!-- <a href="shop.html"> -->
@@ -99,7 +99,7 @@
 				</td>
 				<td class="module-container">
 					<br/>
-					<a href="program.html">
+					<a href="design.html">
 					<div class="side-module-x side-module-x-right">
 						<!-- <div class="side-module-x-inside"></div> -->
 						<!-- <a href="shop.html"> -->
@@ -332,30 +332,133 @@
 			<li>Email me sam</li>
 		</ul> -->
 	<!-- </div> -->
-<div class="col-sm-6 col-sm-offset-2">
-	<div class="content-text panel panel-default shadow-light">
-		<div class="panel-heading">
-			<h2>Extend Arduino for Easier Use</h2>
+
+	<div class="col-sm-6 col-sm-offset-2">
+		<div class="content-text panel panel-default shadow-light">
+			<div class="panel-heading">
+				<h3>Tutorial 1: Blinking Light</h3>
+			</div>
+			<div class="panel-body content-text">
+				<p class="project-desc">
+					Hi! We're glad you're here. This tutorial is the "Hello World" of embedded electronics - it's made to get you up and running in the world of embedded electronics.
+				</p>
+				<p>
+					<img src="blink.gif" style="max-width:90%;"/>
+				</p>
+			</div>
 		</div>
-		<div class="panel-body content-text">
-			<p> Protocol electronics is a company made to educate people about
-				the world of electronics. Our product, the protocol development
-				platform, is an education tool to help people learn about how to
-				code, make simple circuits, and make ideas come to life.
-				Conventional prototyping is a long and painful process but Protocol
-				Electronics makes it easier with its line of prototyping tools.
-				Take a look at our products and get making!
-			</p>
-			<br/>
-			<!-- <h4>May need more content</h4> -->
-			<br/>
-			<!-- <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+	</div>
+	<div class="col-sm-6 col-sm-offset-2">
+		<div class="content-text panel panel-default shadow-light">
+			<div class="panel-heading">
+				<h3>Materials</h3>
+			</div>
+			<div class="panel-body content-text">
+				<p class="project-desc">
+					<ul>
+						<li>A Protocol Main Board</li>
+						<li>A Protocol LED Board</li>
+						<li>A 5V Logic UNO form factor board</li>
+					</ul>
+				</p>
+				<p>
+					<img src="blink.gif" style="max-width:90%;"/>
+				</p>
+			</div>
 		</div>
-	<!-- <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-</div>
-</div>
+	</div>
+	<div class="col-sm-6 col-sm-offset-2">
+		<div class="content-text panel panel-default shadow-light">
+			<div class="panel-heading">
+				<h3>Step 1</h3>
+			</div>
+			<div class="panel-body content-text">
+				<p class="project-desc">
+					Insert your programming board of choice into the protocol main board. Ensure that the USB port is pointing towards the opening in the enclosure and that all of the male pins on the main board line up with the female pins on the programming board.
+				</p>
+				<p>
+					<img src="blink.gif" style="max-width:90%;"/>
+				</p>
+				<p>
+					ensure that all of the gold pins are lined up correctly, or the system will not function properly.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6 col-sm-offset-2">
+		<div class="content-text panel panel-default shadow-light">
+			<div class="panel-heading">
+				<h3>Step 2</h3>
+			</div>
+			<div class="panel-body content-text">
+				<p class="project-desc">
+				Identify the LED protocol board. Insert the board into one of the main board's digital ports. Remember which one you plugged it into! (we will need this piece of informaiton later)
+				</p>
+				<p>
+					<img src="blink.gif" style="max-width:90%;"/>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-sm-offset-2">
+		<div class="content-text panel panel-default shadow-light">
+			<div class="panel-heading">
+				<h3>Step 3</h3>
+			</div>
+			<div class="panel-body content-text">
+				<p class="project-desc">
+				Attach the USB cable that works with both your computer and your programming board into your programming board and the computer USB port
+				</p>
+				<p class="project-desc">
+					If you have not yet installed the Arduino IDE now is the time to do so. follow this <a href="https://www.arduino.cc/en/Main/Software">link</a> to download and install the IDE. After this process is complete, your screen should look like this:
+				</p>
+				<p>
+					<img src="blink.gif" style="max-width:90%;"/>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-sm-6 col-sm-offset-2">
+		<div class="content-text panel panel-default shadow-light">
+			<div class="panel-heading">
+				<h3>Step 4</h3>
+			</div>
+			<div class="panel-body content-text">
+				<p class="project-desc">
+				It's time to upload some code! copy and paste the code in between the lines into the IDE (the arduino program).
+				</p>
+				<pre>
+/*
+  This sketch is example code for the LED module
+
+  By Samuel Cohen for Protocol Electronics LLC
+
+  Plug an LED module into the apropriate port to make this code work.
+ */
+
+int LEDPin = 3; //This variable remembers the pin number for the LED module. Insert the pin number that you selected earlier instead of 3.
+void setup() {
+  pinMode(LEDPin, OUTPUT); // This assigns our LED pin to an output so that the programming board can manipulate it.
+
+}
+
+void loop() {
+  digitalWrite(LEDPin, HIGH); // turn the led ON
+  delay(1000); // wait for 1000 milliseconds
+  digitalWrite(LEDPin, LOW); // turn the led OFF
+  delay(1000);
+
+}
+				</pre>
+				<p>
+					Hit the upload button in the very top left of the IDE and wait until the board finnishes uploading. When the light starts blinking, your done! Try changing the delay times in the code and re-upload. What happens? (delay is measured in milliseconds, so change it by a couple hundread, not one or two) Change one delay time but not the other, what happens then?
+				</p>
+			</div>
+		</div>
+	</div>
+	
 <div class="col-sm-3">
 	<!-- <div class="content-side-image-text"> -->
 	<br/>

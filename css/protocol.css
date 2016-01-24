@@ -19,44 +19,6 @@
 	/*display:inline;*/
 	/*float:right;*/
 }
-/*
-.btn-primary{
-	background-color:#ffffff;
-	border-color:#F0544F;
-	color:#2A2C2E;
-}
-.btn-primary:hover {
-	background-color:#F0544F;
-	border-color:#F0544F;
-	color:#fff !important;
-}*/
-/*.over-image{
-	box-shadow: 0px 0px 15px #888888 !important;
-}*/
-/*#image{
-	background-image:url("../img/redboard2.png");
-	background-repeat:no-repeat;
-	float:left;
-	clear:none;
-	width:100%;
-}*/
-/*.navbar-toggle{
-	background-color:#F0544F !important;
-	border-color:#F0544F !important;
-	color:#F0544F !important;
-}
-.navbar-toggle:hover {
-	background-color:#D2DEE6 !important;
-	border-color:#D2DEE6 !important;
-	color:#D2DEE6 !important;
-}*/
-/*.navbar-toggle:hover .icon-bar{
-	background-color: #FFFFFF !important;
-}*/
-/*.icon-bar{
-	background-color: #F7B724 !important;
-}*/
-
 .side-module-x-inside{
 	height:100%;
 	/*min-height:90px;*/
@@ -645,4 +607,11 @@
 	/*background-color:#A52B27;*/
 	font-size:150%;
 	text-decoration: underline;
+}
+
+.project-desc{
+	font-size:150%;
+}
+.project:hover .panel-heading{
+	color:#f0544f;
 }
