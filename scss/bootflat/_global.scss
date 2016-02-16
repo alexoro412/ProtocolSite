@@ -1,8 +1,11 @@
 // Global Variables
 //------------------------------------------------------
 
-$theme-main:#A52B27;
-$theme-dark:#752927;
+//$theme-main:#A52B27;
+//$theme-dark:#752927;
+
+$theme-main:#FF802B;
+$theme-dark:#802BFF;
 
 $panel-primary:$theme-main;
 $panel-normal:$theme-dark;
@@ -35,8 +38,11 @@ $mint-light:                  #48CFAD !default;
 //$mint-dark: #752927;
 //$mint-light: #a52b27;
 
-$red-dark: #752927;
-$red-light: #A52B27;
+//$red-dark: #752927;
+//$red-light: #A52B27;
+
+$red-dark: #802BFF;
+$red-light: #FF802B;
 
 //$primary-color: #752927;
 
