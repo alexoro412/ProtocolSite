@@ -1,3 +1,3 @@
 # ProtocolSite
 
-a website in progress for protocol
+a website prototype for Protocol Industries
